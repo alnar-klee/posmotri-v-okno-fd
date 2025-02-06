@@ -67,7 +67,7 @@ ol {
   display: grid;
   grid-template-areas: "result content__details";
   align-items: end;
-  width: 1140px;
+  inline-size: 1140px;
   column-gap: 30px;
 }
 
@@ -79,7 +79,7 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-block-end: 16px;
   position: relative;
 }
 
@@ -120,7 +120,7 @@ ol {
 .search-form__textfield {
   appearance: none;
   border: none;
-  width: 225px;
+  min-width: 225px;
   font-family: inherit;
   font-size: inherit;
   color: rgb(255 255 255 / 0.7);
@@ -182,6 +182,7 @@ ol {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
@@ -272,12 +273,12 @@ ol {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-bottom: -5px;
 }
 
 .content__video-card-description {
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1;
 }
 
 .content__video-card-thumbnail {
